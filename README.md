@@ -1,4 +1,4 @@
-My solutions for Project euler.
+My solutions for Project Euler.
 
 
 "What is Project Euler?
