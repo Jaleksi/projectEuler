@@ -12,17 +12,13 @@
 # natural numbers and the square of the sum.
 #
 
-def multisqsum(n): #n = mihin lukuun asti
-    yht = 0
-    for i in range(1, n+1):
-        yht += i**2
-    return yht
+
+def multisqsum(n):
+    return sum([i**2 for i in range(1, n+1)])
+
 
 def multisqsq(n):
-    yht = 0
-    for i in range(1, n+1):
-        yht += i
-    return yht**2
+    return sum([i for i in range(1, n+1)])**2
 
 
 def main():
