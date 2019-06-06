@@ -13,9 +13,7 @@
 #
 
 def charPoints(name, sijainti):
-    points = 0
-    for char in name:
-        points += ord(char.lower())-96
+    points = sum([ord(char.lower())-96 for char in name])
     return points * sijainti
 
 
@@ -23,12 +21,7 @@ def main():
     with open("names.txt", "r") as txt:
         names = sorted(txt.read().replace('"', '').replace(',', ' ').split())
 
-    totalPoints = 0
-
-    for name in names:
-        totalPoints += charPoints(name, names.index(name)+1)
-
-    print(totalPoints)
+    print(sum([charPoints(name, names.index(name)+1) for name in names]))
 
 
 if(__name__ == "__main__"):
