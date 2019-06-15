@@ -17,11 +17,7 @@ def fact(n):
 
 
 def sumOfDigits(n):
-    summa = 0
-    for i in str(n):
-        summa += int(i)
-
-    return summa
+    return sum(int(i) for i in str(n))
 
 
 def main():
