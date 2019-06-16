@@ -28,12 +28,7 @@ def main():
     with open("words.txt", "r") as txt:
         words = txt.read().replace('"', '').replace(',', ' ').split()
 
-    triWordCount = 0
-    for word in words:
-        if(isTri(wordValue(word))):
-            triWordCount += 1
-
-    print(triWordCount)
+    print(sum(1 for word in words if(isTri(wordValue(word)))))
 
 
 if(__name__ == "__main__"):
