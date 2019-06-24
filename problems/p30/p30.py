@@ -20,7 +20,7 @@ def vitosPotenssi(n): # Numeron jokainen luku^5 ja plussataan
 
 
 def main():
-    print(sum([i for i in range(2, 999_999) if(vitosPotenssi(i) == i)]))
+    print(sum(i for i in range(2, 999_999) if(vitosPotenssi(i) == i)))
 
 
 if(__name__ == "__main__"):
