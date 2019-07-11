@@ -8,12 +8,7 @@
 
 
 def sameNums(a, b):
-    for i in str(b):
-        if(i in str(a)):
-            continue
-        else:
-            return False
-    return True
+    return sorted(str(a)) == sorted(str(b))
 
 
 def laskuri(n):
